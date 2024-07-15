@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background {
+    transform: translateZ(-30px) scale(4.5);
+    /* filter: grayscale(100%); */
+}
+
+.foreground {
+    transform: translateZ(-10px) scale(2);
+    /* filter: grayscale(100%); */
+}
+.background,.foreground {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 3rem;
+    font-size: 6rem;
+    color: rgb(3, 2, 2);
+    /* position: relative; */
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.986);
+    color: aliceblue;
+    padding:5rem 0px;
+    width: 100%;
+}
+
+
+
+.bg1{
+    background-image: url(sport-1.jpg);
+    background-attachment: fixed;
+    height: 300px;
+    object-fit: cover;
+    /* filter: grayscale(100%); */
+}
+
+.bg2{
+    background-image: url(sport-2.jpg);
+    background-attachment: fixed;
+    height: 300px;
+    object-fit: cover;
+    /* filter: grayscale(100%); */
+}
+
+
+
+.bg3{
+    background-image: url(sport-3.jpg);
+    background-attachment: fixed;
+    height: 300px;
+    object-fit: cover;
+    /* filter: grayscale(100%); */
+}
+
+.adv{
+    padding :0px 10rem;
+    font-size: 60px;
+}
+
+.text{
+
+    color: white;
+    /* word-spacing: 2px; */
+    font-size: 1.5rem;
+    margin: 5rem 0px;
+    padding: 0px 10rem;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+}
+.bg1:hover,.bg2:hover, .bg3:hover{
+    /* filter: grayscale(0%); */
+    transform: scale(2px);
+    
+    
+}
+.bg{
+    width: 100%;
+    min-height: 470px;
+    
+    background-size: cover;
+    position: relative;
+    background-position: center; 
+}
+
+.desc{
+    color: black;
+    position: absolute;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    padding: 0.5rem 2.5rem;
+    font-size: 50px;
+    transform: translateX(-50%) translateY(-50%);
+}
